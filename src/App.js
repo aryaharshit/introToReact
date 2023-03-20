@@ -11,9 +11,10 @@ import ResponsiveAppBar from './components/Navbar/menubar';
 function App() {
   return (
     <>
-    <ResponsiveAppBar />
-    <Grid container> 
-      <Sidebar /> 
+    {/* <ResponsiveAppBar /> */}
+    
+    <Grid container>  
+    <Sidebar /> 
       <Grid item xs = {8}>
         <Routes>
         <Route>

@@ -8,6 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { navItems } from './constants/sidebarcomps';
 import { navStyle } from './styles';
 import { useNavigate } from 'react-router';
+import { Toolbar } from '@mui/material';
 
 
 function Sidebar(){
@@ -19,12 +20,14 @@ function Sidebar(){
           variant="permanent"
           anchor="left"
         >
+  
           <List>
             {navItems.map((items, index) => (
               <ListItem key={items.id} disablePadding>
                 <ListItemButton
                 sx = {navStyle.button}
-                onClick={()=> navigate(items.route)}>
+                onClick={()=> navigate(items.route)}
+                >
                   <ListItemIcon sx={navStyle.icon}>
                     {items.icon}
                   </ListItemIcon>

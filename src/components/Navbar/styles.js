@@ -6,8 +6,8 @@ export const navStyle = {
             width: 220,
             boxSizing: 'border-box',
             backgroundColor: '#101F33',
-            height: 'calc(100% - 70px)',
-            top: 70
+            // height: 'calc(100% - 70px)',
+            // top: 70
           }
     },
 
@@ -50,7 +50,7 @@ export const menuStyle = {
   },
 
   button: {
-    my: 3, 
+    my: 2, 
     color: 'white', 
     display: 'block',
     '&:hover': {
